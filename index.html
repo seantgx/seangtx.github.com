@@ -1,11 +1,355 @@
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<style>
+
+/* BACKEND CLASSES */
+
+.button-color {
+	background-color: #efe00e;
+	color: #ffffff;
+	padding-right: 5pt;
+	padding-left: 5pt;
+	font-size: 12pt;
+}
+
+
+.fullpage {
+	max-width: 100%;
+}
+
+/* BACKEND CLASSES END */
+/* Test Classes */
+.anim-header-div {
+	max-width: 80%;
+	overflow: hidden;
+    margin:0%;
+    position:relative;
+    left:-8px;
+}
+
+.anim-body-div {
+	max-width: 72%;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: 0;
+    position:relative;
+    left:8px;
+}
+
+.image-container {
+	max-width: 90%;
+	margin: auto;
+}
+
+.image-button-div {
+	padding: 1%;
+	float: left;
+	width: 30%;
+    height:490px;
+    position:relative;
+    left:40px;
+}
+
+@media screen and (max-width: 1000px) {
+	.image-button-div {
+		width: 100%;
+		margin: auto;
+		padding: 5%;
+        height:auto;
+        position:relative;
+        left:-35px;
+
+	}
+}
+
+/* ANIMATIONS */
+.animation-header {
+	background-color: #efe00e;
+	padding: 5% 2% 4% 10%;
+	margin: 0;
+	margin-right: 10%;
+	text-align: center;
+	color: #000000;
+	animation-name: movein;
+	animation-duration: 1.2s;
+	animation-iteration-count: 1;
+	animation-direction: reverse;
+	position: relative;
+}
+
+@keyframes movein {
+	0% {
+		transform: translateX(0%);
+	}
+	
+	18% {
+		transform: translateX(10%);
+	}
+	
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.animation-body {
+	background-color: #202020;
+	color: #efe00e;
+	padding: 3% 0 3% 7%;
+	position: relative;
+	top: 1em;
+	margin-left: 10%;
+	font-weight: 600;
+	text-align: left;
+	animation-name: moveinbody;
+	animation-duration: 1.2s;
+	animation-iteration-count: 1;
+	animation-direction: reverse;
+}
+
+@keyframes moveinbody {
+	0% {
+		transform: translateX(0%);
+	}
+	
+	18% {
+		transform: translateX(-8%);
+	}
+	
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.animation-body-mobile {
+	background-color: #202020;
+	color: #efe00e;
+	padding: 2%;
+	padding-right: 3%;
+	text-align: right;
+	animation-name: moveinbodymobile;
+	animation-duration: .6s;
+	animation-iteration-count: 1;
+	animation-direction: reverse;
+	position: relative;
+	left: 2%;
+}
+
+@keyframes moveinbodymobile {
+	0% {
+		transform: translateX(0%);
+	}
+	
+	5% {
+		transform: translateX(-2%);
+	}
+	
+	75% {
+		transform: translateX(100%);
+	}
+	
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+/* ANIMATION END */
+/* SCREEN SPECIFIC CLASSES */
+/* DESKTOP */
+@media (min-width: 768px) {
+	.animation-body-mobile {
+		display: none;
+	}
+	
+	.desktop-only {
+		display: block;
+	}
+	
+	.mobile-only {
+		display: none;
+	}
+}
+
+.image-button-desktop {
+	padding: 0;
+	width: 98%;
+	background-color: #000000;
+	display: block;
+	opacity: 90%;
+	margin: auto;
+	transition: .2s;
+}
+
+.image-button-desktop:hover {
+	transform: scale(1.1,1.1);
+	padding: 1.5%;
+	border-radius: 5%;
+	background-color: #efe00e;
+	opacity: 100%;
+}	
+
+
+/* MOBILE */
+@media (max-width: 767px) {
+	.animation-header {
+		animation-duration: 1s;
+		text-align: left;
+	}
+	
+	.animation-body {
+		animation-duration: 1s;
+		text-align: left;
+	}
+	
+	.anim-header-div {
+		max-width: 100%;
+	}
+	
+	.anim-body-div {
+		max-width: 100%;
+	}
+	
+	.site-branding {
+		background-color: #000000;
+		position: relative;
+		top: -1pt;
+	}
+	
+	.wf-active .entry-content h1,
+																																	.wf-active .page-content h1 {
+		font-size: 300%;
+	}
+	
+	.desktop-only {
+		display: none;
+	}
+	
+	.mobile-only {
+		display: block;
+	}
+}
+	/* 2k DESKTOP */
+	@media (min-width: 2050px) {
+	
+}
+
+/* SCREEN SPECFIC CLASSES END */
+/* IMAGE CLASSES */
+.image-opacity {
+	opacity: 80%;
+}
+
+.alignwider {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.navigation-bar{
+    width:100%;
+    height: 100px;
+background-color: aqua;
+float:left;
+left:0px;
+}
+.navigation-bar-move{
+position:relative;
+top:25px;
+
+}
+.navigation-home{
+width:75%;
+position:relative;
+left:200px;
+float:left;
+}
+.naviation-button-section{
+    width:25%;
+    float:left;
+}
+
+.navigation-button{
+text-align:center;
+width:45%;
+float:left;
+
+}
+.navigation-text{
+font-size:20pt;
+
+}
+.body-margins{
+margin:3%;
+height:2000px;
+}
+.sticky {
+
+    position:fixed;
+     top:0;
+     z-index:1;
+}
+</style>
+
+
+    <title>Website Test</title>
+
+    
+
+
+</head>
+
 <body>
-<h1>
-Hello world
+    <div class="navigation-bar sticky">
+        <div class="navigation-bar-move">
+        <div class="navigation-home">
+    <h2>Sean Tibbetts</h2>
+        </div>
+        <div class="naviation-button-section">
+    <div class="navigation-button">
+    
+        <h2 class="navigation-text">hello
+    </h2>
+    
+    </div>
+    <div class="navigation-button">
+    
+        <h2 class="navigation-text">Bonjour
+    </h2>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="desktop-only" style="height: 10rem;width: 0px" aria-hidden="true"></div>
+    <div class="mobile-only" style="height: 20rem;width: 0px" aria-hidden="true"></div>
+    
+    <div class="fullpage">
+    <div class="anim-header-div">
+    <h1 class="animation-header" style="line-height: 90% ">SEAN TIBBETTS</h1>
+    </div>
+    <div class="anim-body-div">
+    <p class="animation-body">Blending creativity and strategy to shape brands with <br class="desktop-only" />distinctive and memorable design.</p>
+    </div>
+    </div>
 
-</h1>
-<p>
+    <main class="body-margins">
 
-Hello World!
 
-</p>
+<div class="desktop-only" style="height: 10rem;width: 0px" aria-hidden="true"></div>
+<div class="mobile-only" style="height: 20rem;width: 0px" aria-hidden="true"></div>
+
+<div class="image-container">
+<div class="image-button-div"><a href="https://seangt.com/brooklyn-boulders/"><img class="image-button-desktop" src="https://seangt.com/wp-content/uploads/2024/11/bb-cover.png?w=475" alt="" /></a></div>
+<div class="image-button-div"><a href="https://seangt.com/rocket-fizz/"><img class="image-button-desktop" src="https://seangt.com/wp-content/uploads/2024/10/rocketfizzthumb.png?w=475" alt="" /></a></div>
+<div class="image-button-div"><a href="https://seangt.com/texas-state-parking/"><img class="image-button-desktop" src="https://seangt.com/wp-content/uploads/2024/11/texas-state-parking-app-cover-1.png?w=475" alt="" /></a></div>
+</div>
+
+<div class="desktop-only" style="height: 20px;width: 0px;margin-bottom:0%" aria-hidden="true"></div>
+
+<div class="image-container">
+<div class="image-button-div"><a href="https://seangt.com/electric-rabbit/"><img class="image-button-desktop" src="https://seangt.com/wp-content/uploads/2024/10/thumbnail-rabbit-2.png?w=475" alt="" /></a></div>
+<div class="image-button-div"><a href="https://seangt.com/galway/"><img class="image-button-desktop" src="https://seangt.com/wp-content/uploads/2024/11/galway-cover-6.png?w=475" alt="" /></a></div>
+<div class="image-button-div"><a href="https://seangt.com/nectar-naught/"><img class="image-button-desktop" src="https://seangt.com/wp-content/uploads/2024/11/nn-cover.png?w=475" alt="" /></a></div>
+</div>
+</main>
 </body>
+
+</html>
